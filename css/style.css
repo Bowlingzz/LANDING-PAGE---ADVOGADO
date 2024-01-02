@@ -1,0 +1,348 @@
+/*Reset Básico Do Site*/
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html,body{
+    height: 100%;
+    font-family: 'Open Sans', sans-serif;
+    background-color: rgba(3, 18, 26);
+}
+
+body::-webkit-scrollbar {
+    width: 8px;       
+}
+  
+body::-webkit-scrollbar-track {
+    background: rgb(0, 0, 0);   
+}
+  
+body::-webkit-scrollbar-thumb {
+    background-color: rgb(66, 151, 255);
+    border-radius: 20px; 
+}
+
+
+/*Variaveis Globais do Site*/
+
+.container{
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 4%;
+}
+
+.opacity{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.600);
+}
+
+/*Header TOPO do site*/
+
+header{
+    width: 100%;
+    min-height: 40vh; /* Use min-height para ajustar apenas a altura do inicio e contato com logo  */
+    background-image: url(../images/background.jpg);
+    /*background-color: #000000;*/
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    background-repeat: no-repeat;
+    position: relative;
+    background-attachment: fixed;
+    mix-blend-mode: screen;
+    box-shadow: 0px -100px 100px rgb(0, 0, 0) inset;
+}
+
+header > .container{
+    position: relative;
+    z-index: 2;
+    display: flex;
+    padding: 15px 4%;
+}
+
+/*logo*/
+
+header .logo{
+    width: 100%;
+    color: white;
+
+}
+
+header .logo h1{
+    width: 70px;
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid white;
+}
+
+header .logo h1:hover{
+    color: goldenrod;
+}
+
+
+/*Menu desktop*/
+
+header nav.menu_desktop{
+    width: 100%;
+    text-align: center;
+    line-height: 40px;
+}
+
+header nav.menu_desktop ul{
+    display: flex;
+    width: 100%;
+    list-style: none;
+    justify-content: center;
+}
+
+header nav.menu_desktop li{
+    font-size: 16px;
+    margin: 0 15px;
+    text-transform: lowercase;
+}
+
+header nav.menu_desktop li a{
+    color: white;
+    text-decoration: none;
+}
+
+header nav.menu_desktop li a:hover{
+    color: goldenrod;
+}
+
+
+
+/*Container img*/
+
+header .container-txt {
+    width: 100%;
+    position: relative;
+    top: 40%;
+    text-align: center;
+    padding: 0 15px;
+    left: 50%;
+    margin: -15px 0;
+    transform: translate(-50%, -50%) 
+}
+
+header .container-txt p{
+    color: goldenrod;
+}
+
+header .container-txt h2{
+    font-size: 45px;
+    text-align: center;
+    color: white;
+}
+
+/*Sessão de informações FOTO CESAR*/
+
+section.info{
+    padding: 20px 0;
+    width: 100%;
+}
+
+section.info .info-content{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 30px 0;
+}
+
+section.info .img-info{
+    width:30%;
+}
+
+section.info .img-info img{
+    width: 100%;
+}
+
+section.info .info-content:nth-child(2){
+    flex-direction: row-reverse;
+}
+
+section.info .text-info{
+    display: flex;
+    width:70%;
+    padding: 0 30px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+section.info  h3{
+    color: rgb(255, 204, 76);
+    margin-bottom: 8px;
+}
+
+section.info  h2{
+    font-size: 35px;
+    color: white;
+    text-align: justify;
+}
+
+section.info  p{
+    margin-top: 25px;
+    color: #ccc;
+    text-align: justify;
+}
+
+/*footer rodape */
+
+footer{
+    width: 100%;
+    padding: 20px 0;
+    border-top: 1px solid rgb(255, 255, 255);
+    text-align: center;
+    color: white;  
+}
+
+.footer-info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-info,
+.social-links {
+    width: 48%; /* Ajuste conforme necessário para espaçamento */
+}
+
+footer span a{
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+footer p {
+    padding: 10px 0;
+    font-size: 14px;
+    color: #ccc; /* Cor do texto */
+}
+
+/* Estilize os links sociais e o botão do Instagram */
+footer span a i,
+.instagram-button {
+    color: rgb(255, 204, 76);
+    font-size: 20px; /* Ajuste conforme necessário */
+    padding: 5px 10px;
+    margin-right: 10px; /* Adicione um espaçamento à direita se necessário */
+    cursor: pointer;
+}
+
+/* Ajuste o estilo do botão conforme necessário */
+.instagram-button {
+    background-color: rgb(255, 204, 76);
+    color: #000; /* Cor do texto no botão */
+    text-decoration: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+
+
+/* Estilo do botão do WhatsApp com ícone */
+.whatsapp-button {
+    display: inline-block;
+    background-color: #25d366; /* Cor de fundo do WhatsApp */
+    color: #fff; /* Cor do texto do botão */
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-top: 15px; /* Ajuste conforme necessário */
+}
+
+/* Estilo do ícone do WhatsApp */
+.whatsapp-button i {
+    margin-right: 10px; /* Ajuste conforme necessário para o espaçamento entre o ícone e o texto */
+}
+
+.recipes .col-md-4,
+.blog-post {
+    margin-bottom: 2rem;
+}
+
+/* Sessão Blog */
+section.blog {
+    text-align: center;
+    padding: 50px 0;
+    background-color: #031a1a; /* Cor de fundo da seção, ajuste conforme necessário */
+    color: white; /* Cor do texto, ajuste conforme necessário */
+}
+
+/* Ajustes para a Sessão Blog */
+.blog {
+    text-align: center;
+    padding: 50px 0;
+    background-color: #f5f5f5; /* Cor de fundo da seção, ajuste conforme necessário */
+}
+
+.blog-posts {
+    max-width: 800px; /* Ajuste conforme necessário */
+    margin: 0 auto;
+}
+
+.blog-posts h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.blog-posts h2 {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+
+/* Adicione essas regras CSS para estilizar os cards e o container */
+
+.card {
+    background-color: #fff; /* Cor de fundo do card */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra do card */
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+.card h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333; /* Cor do título do card */
+}
+
+.card-content {
+    margin-bottom: 15px;
+}
+
+.card-content h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #555; /* Cor do título do conteúdo do card */
+}
+
+.card-content p {
+    font-size: 16px;
+    color: #777; /* Cor do texto do card */
+}
+
+
+/* maps da pagina contato */
+.map-container {
+    margin-top: 20px;
+    overflow: hidden;
+    position: relative;
+    padding-bottom: 30.25%; /* Aspect ratio (height/width) for responsive design */
+    height: 0;
+}
+
+.map-container iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
