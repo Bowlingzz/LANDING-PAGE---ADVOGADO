@@ -3,4 +3,4 @@ O projeto foi desenvolvido utilizando as seguintes tecnologias:
 ✔️ HTML ✔️ CSS ✔️ JavaScript
 
 
-https://cesartomiaziadvogado.com.br/
+https://cesartomiaziadvogado.com
